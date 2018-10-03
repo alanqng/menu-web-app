@@ -1,10 +1,11 @@
+from flask import render_template
 from app import app
 
 
 @app.route('/')
 @app.route('/restaurants')
 def show_restaurants():
-    return render_template('restaurants.html')
+    return render_template('restaurants.html', restaurants = restaurants)
 
 @app.route('/restaurant/new')
 def new_restaurant():
