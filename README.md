@@ -1,2 +1,2 @@
-# menu-web-app
+# Menu Web App
 A menu application using Flask
