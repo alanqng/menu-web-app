@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-
+    <a href="{{url_for('new_restaurant')}}">Add new restaurant</a>
     {% for restaurant in restaurants %}
     <div>
-        <h2>{{ restaurant['name'] }}</h2>
+        <a href="#">{{ restaurant['name'] }}</a></div><br>
     </div>
 
     {% endfor %}

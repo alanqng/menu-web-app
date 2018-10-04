@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///restaurantmenu.db'
+app.config['SECRET_KEY'] = 'you-will-never-guess'
 db = SQLAlchemy(app)
 
 from app import routes, models
